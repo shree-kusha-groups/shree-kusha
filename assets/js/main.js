@@ -225,7 +225,7 @@
     arrows: true,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 10000,
     speed: 1000,
     vertical: true,
     verticalSwiping: true,
