@@ -15629,7 +15629,7 @@ Location:
   right: 0;
   bottom: 0;
   z-index: 9999999999;
-  background-color: var(--ztc-text-text-2);
+  background-color: var(--ztc-text-text-0);
   display: flex;
   align-items: center;
   justify-content: center;
