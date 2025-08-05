@@ -419,11 +419,13 @@ img {
   --ztc-text-text-0: #fff;
   --ztc-text-text-2: #030E0F;
   --ztc-text-text-3: #252728;
-  --ztc-text-text-4: #CBCD30;
+  --ztc-text-text-4: #3CB371;
   --ztc-text-text-5: #007795;
   --ztc-text-text-6: #FCC608;
   --ztc-text-text-7: #1A47FB;
   --ztc-text-text-8: #1A47FB;
+  --ztc-text-text-9: #3CB371;
+  --ztc-bg-bg-0: #3CB371;
   --ztc-bg-bg-1: #fff;
   --ztc-bg-bg-2: #030E0F;
   --ztc-bg-bg-3: #1A47FB;
@@ -570,7 +572,7 @@ Location:
 /*============= FOOTER CSS AREA ===============*/
 /*============= COMMON CSS AREA ===============*/
 .heading1 h5 {
-  color: var(--ztc-text-text-5);
+  color: var(--ztc-text-text-9);
   text-align: center;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
@@ -1904,7 +1906,7 @@ Location:
   left: 0;
   top: 0;
   background: #007795;
-  opacity: 60%;
+  opacity: 30%;
   z-index: -1;
 }
 .hero-area-slider .hero1-section-area .hero-img1 {
@@ -7259,7 +7261,7 @@ Location:
   left: 0;
   top: 0;
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-4);
+  background: var(--ztc-bg-bg-0);
   z-index: -1;
 }
 .homepage1-body .header-area.homepage1 nav#navbar-example2 {
@@ -7368,11 +7370,11 @@ Location:
   justify-content: space-between;
   position: relative;
   transition: all 0.4s;
-  padding: 16px 0;
+  padding: 5px 0;
 }
 .homepage1-body .header-area.homepage1 .header-elements .site-logo {
-  height: 48px;
-  width: 180px;
+  height: 120px;
+  width: 320px;
   object-fit: contain;
 }
 .homepage1-body .header-area.homepage1 .header-elements .all-images-menu {
@@ -7569,7 +7571,7 @@ Location:
   left: 50%;
   bottom: -5px;
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-4);
+  background: var(--ztc-bg-bg-0);
   visibility: hidden;
   opacity: 0;
 }
@@ -7583,9 +7585,17 @@ Location:
   height: 100px;
   top: 100%;
 }
+.main-menu .active{
+  color: var(--ztc-text-text-9) !important;
+  visibility: visible;
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover > a {
   transition: all 0.4s;
-  color: var(--ztc-text-text-5) !important;
+  color: var(--ztc-text-text-9) !important;
+  
 }
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover > a::after {
   visibility: visible;
@@ -7745,8 +7755,8 @@ Location:
   border-radius: 8px;
 }
 .homepage2-body .header-area.homepage2 .header-elements .site-logo {
-  height: 48px;
-  width: 180px;
+  height: 120px;
+  width: 320px;
   object-fit: contain;
 }
 .homepage2-body .header-area.homepage2 .header-elements .all-images-menu {
@@ -8112,8 +8122,8 @@ Location:
   border-radius: 8px;
 }
 .homepage3-body .header-area.homepage3 .header-elements .site-logo {
-  height: 48px;
-  width: 180px;
+  height: 120px;
+  width: 320px;
   object-fit: contain;
 }
 .homepage3-body .header-area.homepage3 .header-elements .all-images-menu {
@@ -8831,7 +8841,7 @@ Location:
 .properties-section-area .property-feature-slider .tabs-btn-area ul li button {
   border-radius: 4px;
   background: rgba(7, 59, 58, 0.1);
-  color: var(--ztc-text-text-5);
+  color: var(--ztc-text-text-2);
   text-align: center;
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
@@ -8852,8 +8862,8 @@ Location:
   }
 }
 .properties-section-area .property-feature-slider .tabs-btn-area ul li button.active {
-  background: var(--ztc-bg-bg-4);
-  color: var(--ztc-text-text-1);
+  background: var(--ztc-bg-bg-0);
+  color: var(--ztc-text-text-2);
   transition: all 0.4s;
 }
 .properties-section-area .property-feature-slider .tabs-btn-area ul li button svg {
@@ -15637,10 +15647,11 @@ Location:
 
 .loading-container,
 .loading {
-  height: 120px;
+  height: 220px;
+  width: 220px;
   position: relative;
-  width: 120px;
   border-radius: 100%;
+  color: #000;
 }
 
 .loading-container {
@@ -15648,15 +15659,15 @@ Location:
 }
 
 .loading {
-  border: 1px solid transparent;
-  border-color: transparent var(--ztc-text-text-1) transparent var(--ztc-text-text-1);
-  animation: rotate-loading 1.5s linear 0s infinite normal;
+  border: 5px solid transparent;
+  border-color: transparent var(--ztc-text-text-2) transparent var(--ztc-text-text-2);
+  animation: rotate-loading 2s linear 0s infinite normal;
   transform-origin: 50% 50%;
 }
 
 .loading-container:hover .loading,
 .loading-container .loading {
-  transition: all 0.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 #loading-icon {
@@ -15664,8 +15675,8 @@ Location:
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70px;
-  width: 70px;
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes rotate-loading {
@@ -19975,8 +19986,8 @@ Location:
     padding: 20px;
   }
 }
-.items-section-area .item-featured-boxarea h6 {
-  color: var(--ztc-text-text-5);
+.items-section-area .item-featured-boxarea h6, h5 {
+  color: var(--ztc-text-text-2);
   font-family: var(--ztc-family-font1);
   font-size: var(--ztc-font-size-font-s18);
   font-style: normal;
@@ -19991,13 +20002,13 @@ Location:
   line-height: 21px;
   display: inline-block;
   transition: all 0.4s;
-  background: var(--ztc-bg-bg-4);
+  background: var(--ztc-bg-bg-2);
   border-radius: 50%;
   margin: 0 6px 0 0;
-  color: var(--ztc-text-text-1);
+  color: var(--ztc-text-text-4);
 }
 .items-section-area .item-featured-boxarea h4 {
-  color: var(--ztc-text-text-2);
+  color: var(--ztc-text-text-4);
   font-family: var(--ztc-family-font1);
   font-size: 28px;
   font-style: normal;
