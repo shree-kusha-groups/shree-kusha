@@ -1535,7 +1535,7 @@ Location:
 .about2-section-area .about-heading .accordion .accordion-item {
   border: none;
   background: none;
-  box-shadow: none;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
   border: 1px solid #E1E3E8;
   border-radius: 4px;
   margin-top: 16px;
@@ -4819,8 +4819,8 @@ Location:
   position: fixed;
 }
 .mobile-header.mobile-header1 .mobile-logo {
-  height: 48px;
-  width: 180px;
+  height: 60px;
+  width: 300px;
 }
 .mobile-header.mobile-header1 .mobile-nav-icon {
   color: var(--ztc-text-text-2);
@@ -4921,8 +4921,8 @@ Location:
   position: fixed;
 }
 .mobile-header.mobile-header2 .mobile-logo {
-  height: 48px;
-  width: 180px;
+  height: 60px;
+  width: 300px;
 }
 .mobile-header.mobile-header2 .mobile-nav-icon {
   color: var(--ztc-text-text-2);
@@ -5023,8 +5023,8 @@ Location:
   position: fixed;
 }
 .mobile-header.mobile-header3 .mobile-logo {
-  height: 48px;
-  width: 180px;
+  height: 60px;
+  width: 300px;
 }
 .mobile-header.mobile-header3 .mobile-nav-icon {
   color: var(--ztc-text-text-2);
@@ -5125,8 +5125,8 @@ Location:
   position: fixed;
 }
 .mobile-header.mobile-header4 .mobile-logo {
-  height: 48px;
-  width: 180px;
+  height: 60px;
+  width: 300px;
 }
 .mobile-header.mobile-header4 .mobile-nav-icon {
   color: var(--ztc-text-text-2);
@@ -8856,6 +8856,20 @@ Location:
 @media (max-width: 767px) {
   .properties-section-area .property-feature-slider .tabs-btn-area ul li button {
     margin-bottom: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+  }
+}
+@media (max-width: 767px){
+  .properties-section-area .property-feature-slider .tabs-btn-area ul {
+    margin-bottom: 10px;
+    display: flex !important;
+    text-align: center;
+    flex-direction: row !important;
+    overflow: scroll;
+    flex-wrap: nowrap;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8881,6 +8895,7 @@ Location:
   background: var(--ztc-bg-bg-1);
   border-radius: 8px;
   margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 .properties-section-area .property-feature-slider .property-boxarea:hover .img1 img {
   transform: scale(1.05) rotate(0deg);
@@ -15986,6 +16001,7 @@ Location:
   padding: 24px;
   transition: all 0.4s;
   margin-bottom: 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .offer1-section-area .offer-boxarea:hover {
   background: #5959594a;
