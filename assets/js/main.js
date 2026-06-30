@@ -91,6 +91,30 @@
     }
     //========== VIDEO POPUP ENDS ============= //
 
+    //========== VIDEO GALLERY SCROLL STARTS ============= //
+    const videoRail = document.querySelector(".video-gallery-rail");
+    if (videoRail) {
+      const getVideoScrollAmount = () => {
+        const card = videoRail.querySelector("[class*='col-']");
+        const styles = window.getComputedStyle(videoRail);
+        const gap = parseFloat(styles.columnGap || styles.gap) || 24;
+        const cardWidth = card ? card.getBoundingClientRect().width : videoRail.clientWidth;
+        const visibleCards = window.innerWidth >= 1200 ? 4 : window.innerWidth >= 768 ? 2 : 1;
+        return (cardWidth + gap) * visibleCards;
+      };
+
+      document.querySelectorAll("[data-video-scroll]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const direction = button.getAttribute("data-video-scroll") === "next" ? 1 : -1;
+          videoRail.scrollBy({
+            left: getVideoScrollAmount() * direction,
+            behavior: "smooth",
+          });
+        });
+      });
+    }
+    //========== VIDEO GALLERY SCROLL ENDS ============= //
+
     //========== AOS_ANIMATION STARTS ============= //
     AOS.init;
     AOS.init({ disable: 'mobile' });
@@ -152,7 +176,7 @@
     fade: true,
     loop: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 6000,
     infinite: true,
     responsive: [
       {
@@ -185,13 +209,74 @@
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 6000,
+    pauseOnHover: true,
     loop: true,
     focusOnSelect: true,
     asNavFor: ".slider2",
     infinite: true,
     prevArrow: $('.next-arrow'),
     nextArrow: $('.prev-arrow'),
+  });
+
+  function setupTestimonialReadMore() {
+    $(".testimonial1-section-area .testimonial-box").each(function () {
+      var box = $(this);
+      var review = box.children("p").first();
+
+      if (!review.length) {
+        return;
+      }
+
+      review.addClass("testimonial-review-text");
+
+      if (!box.children(".testimonial-read-toggle").length) {
+        review.after('<button type="button" class="testimonial-read-toggle" aria-expanded="false">Read more</button>');
+      }
+
+      var previousStyle = review.attr("style");
+      var lineHeight = parseFloat(review.css("line-height")) || 36;
+      var visibleLines = window.matchMedia("(max-width: 767px)").matches ? 6 : 4;
+      review.css({
+        "display": "block",
+        "-webkit-line-clamp": "unset",
+        "overflow": "visible"
+      });
+
+      var shouldToggle = review[0].scrollHeight > (lineHeight * visibleLines) + 4;
+
+      if (previousStyle === undefined) {
+        review.removeAttr("style");
+      } else {
+        review.attr("style", previousStyle);
+      }
+
+      box.toggleClass("has-long-review", shouldToggle);
+    });
+  }
+
+  setupTestimonialReadMore();
+
+  $(document).on("click", ".testimonial-read-toggle", function () {
+    var button = $(this);
+    var box = button.closest(".testimonial-box");
+    var slider = box.closest(".slider1");
+    var isExpanded = !box.hasClass("is-expanded");
+
+    slider.find(".testimonial-box.is-expanded").not(box).removeClass("is-expanded")
+      .find(".testimonial-read-toggle").attr("aria-expanded", "false").text("Read more");
+
+    box.toggleClass("is-expanded", isExpanded);
+    button.attr("aria-expanded", isExpanded ? "true" : "false")
+      .text(isExpanded ? "Show less" : "Read more");
+
+    if (slider.hasClass("slick-initialized")) {
+      slider.slick(isExpanded ? "slickPause" : "slickPlay");
+      slider.slick("setPosition");
+    }
+    if ($(".slider2").hasClass("slick-initialized")) {
+      $(".slider2").slick(isExpanded ? "slickPause" : "slickPlay");
+    }
   });
 
 

@@ -1,6 +1,8 @@
-var ctx = document.getElementById("lineChart").getContext("2d");
-var gradient = ctx.createLinearGradient(0, 0, 0, 400);
+var lineChart = document.getElementById("lineChart");
 
+if (lineChart && typeof Chart !== "undefined") {
+var ctx = lineChart.getContext("2d");
+var gradient = ctx.createLinearGradient(0, 0, 0, 400);
 
 var myChart = new Chart(ctx, {
   type: "line", // Sử dụng biểu đồ line và thiết lập vùng fill
@@ -36,7 +38,7 @@ var myChart = new Chart(ctx, {
     responsive: true,
     plugins: {
       legend: {
-        display: false, 
+        display: false,
       },
     },
     scales: {
@@ -46,3 +48,4 @@ var myChart = new Chart(ctx, {
     },
   },
 });
+}

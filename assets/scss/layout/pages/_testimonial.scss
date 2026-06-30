@@ -24,6 +24,12 @@
     box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
     border-radius: 16px;
     margin-left: 30px;
+    .slick-list {
+        transition: height 0.35s ease;
+    }
+    .slick-slide {
+        height: auto;
+    }
     @media #{$xs} {
         margin-top: 30px;
         margin-left: 0;
@@ -37,8 +43,21 @@
         z-index: 1;
         padding: 34px 48px;
         border-radius: 16px;
+        min-height: 436px;
+        display: flex;
+        flex-direction: column;
+        > img {
+            align-self: flex-start;
+            flex: 0 0 auto;
+            height: auto;
+            width: 64px;
+            @media #{$xs} {
+                width: 48px;
+            }
+        }
         @media #{$xs} {
             padding: 30px;
+            min-height: 520px;
         }
         p {
             color: var(--ztc-text-text-2);
@@ -48,16 +67,58 @@
             font-weight: var(--ztc-weight-regular);
             line-height: 36px; 
             display: inline-block;
-            transition: all .4s;  
+            transition: all .4s;
             @media #{$xs} {
                 font-size: var(--ztc-font-size-font-s18);
                 line-height: 30px;
-            }      
+            }
+        }
+        .testimonial-review-text {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 4;
+            overflow: hidden;
+            @media #{$xs} {
+                -webkit-line-clamp: 6;
+            }
+        }
+        &.is-expanded {
+            min-height: 0;
+            .testimonial-review-text {
+                display: block;
+                overflow: visible;
+            }
+        }
+        .testimonial-read-toggle {
+            align-self: flex-start;
+            border: 0;
+            background: rgba(2, 109, 57, 0.1);
+            border-radius: 999px;
+            color: var(--ztc-text-text-4);
+            display: none;
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s16);
+            font-weight: var(--ztc-weight-semibold);
+            line-height: 1;
+            margin-top: 16px;
+            padding: 11px 18px;
+            transition: all .3s;
+            &:hover {
+                background: var(--ztc-text-text-4);
+                color: var(--ztc-text-text-1);
+            }
+        }
+        &.has-long-review {
+            .testimonial-read-toggle {
+                display: inline-flex;
+            }
         }
         .test-images {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            margin-top: auto;
+            padding-top: 24px;
             @media #{$xs} {
                 display: inline-block;
             }

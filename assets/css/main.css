@@ -543,9 +543,9 @@ img {
 
 /*
 ============================
-Name:  HouseBox - Real Esate Template
+Name:  Shree Kusha Ventures Website
 Version: 1.0.0
-Description: HouseBox - Real Esate Template
+Description: Shree Kusha Ventures Website
 Author: alithemes
 Author URI: https://themeforest.net/user/alithemes/portfolio
 Location:
@@ -1919,6 +1919,48 @@ Location:
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+.hero-area-slider .hero1-section-area.hero-brand-slide,
+.hero-area-slider .hero1-section-area.hero-award-slide {
+  min-height: 821px;
+}
+.hero-area-slider .hero1-section-area.hero-brand-slide .hero-brand-link,
+.hero-area-slider .hero1-section-area.hero-award-slide .hero-brand-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+}
+.hero-area-slider .hero1-section-area.hero-brand-slide .hero-brand-link picture,
+.hero-area-slider .hero1-section-area.hero-award-slide .hero-brand-link picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.hero-area-slider .hero1-section-area.hero-brand-slide::after,
+.hero-area-slider .hero1-section-area.hero-award-slide::after {
+  opacity: 0;
+}
+.hero-area-slider .hero1-section-area.hero-brand-slide .hero-brand-img,
+.hero-area-slider .hero1-section-area.hero-award-slide .hero-brand-img {
+  object-position: center center;
+  z-index: 0;
+}
+.hero-area-slider .hero1-section-area.hero-brand-slide .hero-header-area,
+.hero-area-slider .hero1-section-area.hero-award-slide .hero-header-area {
+  display: none;
+}
+@media (max-width: 767px) {
+  .hero-area-slider .hero1-section-area.hero-brand-slide,
+  .hero-area-slider .hero1-section-area.hero-award-slide {
+    min-height: 586px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .hero-area-slider .hero1-section-area.hero-brand-slide,
+  .hero-area-slider .hero1-section-area.hero-award-slide {
+    min-height: 676px;
+  }
 }
 .hero-area-slider .hero1-section-area .hero-header-area h5 {
   color: var(--ztc-text-text-1);
@@ -6179,6 +6221,225 @@ Location:
   transition: all 0.4s;
 }
 
+.recognition-section-area {
+  position: relative;
+  z-index: 1;
+  background: #F7F9F8;
+}
+.recognition-section-area .recognition-eyebrow {
+  color: var(--ztc-bg-bg-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  display: inline-block;
+  margin-bottom: 14px;
+}
+.recognition-section-area .recognition-lead {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s18);
+  font-weight: var(--ztc-weight-regular);
+  line-height: 28px;
+  margin: 0;
+}
+.recognition-section-area .award-feature-card,
+.recognition-section-area .recognition-card,
+.recognition-section-area .article-card {
+  height: 100%;
+  border-radius: 8px;
+  background: var(--ztc-text-text-1);
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+.recognition-section-area .award-feature-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 0;
+}
+@media (max-width: 991px) {
+  .recognition-section-area .award-feature-card {
+    grid-template-columns: 1fr;
+  }
+}
+.recognition-section-area .award-feature-card .award-image {
+  min-height: 360px;
+  background: #E8ECEB;
+}
+.recognition-section-area .award-feature-card .award-image img,
+.recognition-section-area .article-card .article-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.recognition-section-area .award-feature-card .award-content {
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .recognition-section-area .award-feature-card .award-content {
+    padding: 26px 22px;
+  }
+  .recognition-section-area .award-feature-card .award-image {
+    min-height: 260px;
+  }
+}
+.recognition-section-area .award-feature-card .award-badge,
+.recognition-section-area .article-card .article-badge {
+  width: fit-content;
+  border-radius: 4px;
+  background: rgba(0, 112, 60, 0.1);
+  color: var(--ztc-bg-bg-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s14);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 14px;
+  padding: 9px 12px;
+  margin-bottom: 18px;
+}
+.recognition-section-area h3 {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s32);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 40px;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .recognition-section-area h3 {
+    font-size: var(--ztc-font-size-font-s26);
+    line-height: 34px;
+  }
+}
+.recognition-section-area p {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-regular);
+  line-height: 26px;
+  margin: 0;
+}
+.recognition-section-area .award-meta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  margin: 26px 0;
+}
+@media (max-width: 575px) {
+  .recognition-section-area .award-meta {
+    grid-template-columns: 1fr;
+  }
+}
+.recognition-section-area .award-meta span {
+  display: block;
+  border-radius: 8px;
+  background: #F2F3F3;
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s15);
+  font-weight: var(--ztc-weight-medium);
+  line-height: 22px;
+  padding: 14px;
+}
+.recognition-section-area .award-coverage-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.recognition-section-area .award-coverage-links a {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(0, 112, 60, 0.18);
+  border-radius: 999px;
+  color: var(--ztc-bg-bg-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s15);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 15px;
+  padding: 11px 16px;
+  transition: all 0.3s;
+}
+.recognition-section-area .award-coverage-links a:hover {
+  background: var(--ztc-bg-bg-4);
+  color: var(--ztc-text-text-1);
+}
+.recognition-section-area .recognition-card {
+  padding: 28px;
+}
+.recognition-section-area .recognition-card h4,
+.recognition-section-area .article-card h4 {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s22);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 30px;
+  margin: 0;
+}
+.recognition-section-area .recognition-card .source {
+  color: var(--ztc-bg-bg-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s15);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 15px;
+  margin-bottom: 14px;
+}
+.recognition-section-area .article-card {
+  display: flex;
+  flex-direction: column;
+}
+.recognition-section-area .article-card .article-image {
+  height: 230px;
+  background: #E8ECEB;
+}
+.recognition-section-area .article-card .article-content {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.recognition-section-area .article-card .article-meta {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s14);
+  font-weight: var(--ztc-weight-medium);
+  line-height: 14px;
+  opacity: 0.78;
+  margin-bottom: 14px;
+}
+.recognition-section-area .article-card p {
+  margin-top: 14px;
+}
+.recognition-section-area .article-card .readmore,
+.recognition-section-area .award-feature-card .readmore,
+.recognition-section-area .recognition-card .readmore {
+  color: var(--ztc-bg-bg-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 24px;
+  transition: all 0.4s;
+}
+.recognition-section-area .article-card .readmore:hover,
+.recognition-section-area .award-feature-card .readmore:hover,
+.recognition-section-area .recognition-card .readmore:hover {
+  color: var(--ztc-text-text-2);
+}
+.recognition-section-area .article-card .readmore i,
+.recognition-section-area .award-feature-card .readmore i,
+.recognition-section-area .recognition-card .readmore i {
+  font-size: 14px;
+}
+
 .blog-bottom-area {
   position: relative;
   z-index: 1;
@@ -6489,6 +6750,54 @@ Location:
   line-height: 26px;
   font-size: var(--ztc-font-size-font-s16);
   color: var(--ztc-text-text-2);
+}
+.instagram-posts .footer-awards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+.instagram-posts .footer-award-card {
+  min-width: 0;
+}
+.instagram-posts .footer-award-card a {
+  display: block;
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(0, 112, 60, 0.12);
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(13, 15, 24, 0.08);
+  overflow: hidden;
+  position: relative;
+}
+.instagram-posts .footer-award-card a::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 55%, rgba(0, 0, 0, 0.24) 100%);
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.4s;
+}
+.instagram-posts .footer-award-card a:hover::after {
+  opacity: 1;
+}
+.instagram-posts .footer-award-card img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.4s;
+}
+.instagram-posts .footer-award-card:nth-child(2) img {
+  object-position: center 58%;
+}
+.instagram-posts .footer-award-card a:hover img {
+  transform: scale(1.04);
+}
+@media (max-width: 575px) {
+  .instagram-posts .footer-awards-grid {
+    gap: 10px;
+  }
 }
 .footer1-section-area .copyright p {
   color: var(--ztc-text-text-2);
@@ -7597,7 +7906,7 @@ Location:
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover > a {
   transition: all 0.4s;
   color: var(--ztc-text-text-9) !important;
-  
+
 }
 .homepage1-body .header-area.homepage1 .header-elements .main-menu ul li:hover > a::after {
   visibility: visible;
@@ -15906,6 +16215,331 @@ Location:
   object-fit: cover;
   margin: 0 6px 0 0;
 }
+.pricing-modern-section {
+  background: #F7FAF8;
+  overflow: hidden;
+}
+.pricing-modern-section .pricing-modern-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.7fr);
+  align-items: end;
+  gap: 40px;
+  margin-bottom: 28px;
+}
+.pricing-modern-section .pricing-modern-intro .heading1 h2 {
+  color: var(--ztc-bg-bg-4);
+  max-width: 720px;
+}
+.pricing-modern-section .pricing-modern-intro p {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s18);
+  font-weight: var(--ztc-weight-regular);
+  line-height: 28px;
+  margin: 0;
+  opacity: 0.82;
+}
+.pricing-modern-section .pricing-trust-strip {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.pricing-modern-section .pricing-trust-strip span {
+  min-height: 58px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--ztc-text-text-1);
+  border: 1px solid rgba(0, 112, 60, 0.12);
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s15);
+  font-weight: var(--ztc-weight-medium);
+  line-height: 22px;
+  padding: 14px 16px;
+}
+.pricing-modern-section .pricing-trust-strip i {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(0, 112, 60, 0.1);
+  color: var(--ztc-bg-bg-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  flex: 0 0 auto;
+}
+.pricing-modern-section .pricing-plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+.pricing-modern-section .pricing-plan-card {
+  position: relative;
+  min-height: 100%;
+  border-radius: 12px;
+  background: var(--ztc-text-text-1);
+  border: 1px solid rgba(0, 112, 60, 0.12);
+  box-shadow: 0 18px 45px rgba(13, 15, 24, 0.08);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-modern-section .pricing-plan-card.is-featured {
+  background: var(--ztc-bg-bg-4);
+  border-color: var(--ztc-bg-bg-4);
+  color: var(--ztc-text-text-1);
+  transform: translateY(-10px);
+  box-shadow: 0 24px 60px rgba(0, 112, 60, 0.25);
+}
+.pricing-modern-section .plan-topline {
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.pricing-modern-section .plan-topline span,
+.pricing-modern-section .plan-topline strong {
+  color: var(--ztc-bg-bg-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s14);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+.pricing-modern-section .plan-topline strong {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--ztc-text-text-1);
+  padding: 8px 12px;
+  text-transform: none;
+}
+.pricing-modern-section .pricing-plan-card.is-featured .plan-topline span {
+  color: rgba(255, 255, 255, 0.86);
+}
+.pricing-modern-section .pricing-plan-card h3 {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s28);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 34px;
+  margin: 0;
+}
+.pricing-modern-section .pricing-plan-card.is-featured h3,
+.pricing-modern-section .pricing-plan-card.is-featured p,
+.pricing-modern-section .pricing-plan-card.is-featured li,
+.pricing-modern-section .pricing-plan-card.is-featured .plan-price,
+.pricing-modern-section .pricing-plan-card.is-featured .plan-price span {
+  color: var(--ztc-text-text-1);
+}
+.pricing-modern-section .plan-price {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: 48px;
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 54px;
+  margin: 20px 0 16px;
+}
+.pricing-modern-section .plan-price .currency {
+  font-size: 34px;
+  line-height: 34px;
+  padding-right: 4px;
+}
+.pricing-modern-section .plan-price span {
+  color: var(--ztc-text-text-3);
+  font-size: var(--ztc-font-size-font-s18);
+  font-weight: var(--ztc-weight-medium);
+  line-height: 18px;
+}
+.pricing-modern-section .plan-price-text {
+  font-size: 30px;
+  line-height: 38px;
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+}
+.pricing-modern-section .pricing-plan-card p {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-regular);
+  line-height: 26px;
+  margin: 0 0 22px;
+  opacity: 0.86;
+}
+.pricing-modern-section .pricing-plan-card ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pricing-modern-section .pricing-plan-card li {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s15);
+  font-weight: var(--ztc-weight-medium);
+  line-height: 22px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 13px;
+}
+.pricing-modern-section .pricing-plan-card li i {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(0, 112, 60, 0.1);
+  color: var(--ztc-bg-bg-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  flex: 0 0 auto;
+  margin-top: 1px;
+}
+.pricing-modern-section .pricing-plan-card.is-featured li i {
+  background: rgba(255, 255, 255, 0.16);
+  color: var(--ztc-text-text-1);
+}
+.pricing-modern-section .pricing-action {
+  min-height: 48px;
+  width: 100%;
+  border-radius: 8px;
+  background: var(--ztc-bg-bg-4);
+  color: var(--ztc-text-text-1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 16px;
+  margin-top: auto;
+  padding: 16px 18px;
+  transition: all 0.3s ease;
+}
+.pricing-modern-section .pricing-action:hover {
+  background: var(--ztc-text-text-2);
+  color: var(--ztc-text-text-1);
+}
+.pricing-modern-section .pricing-plan-card.is-featured .pricing-action {
+  background: var(--ztc-text-text-1);
+  color: var(--ztc-bg-bg-4);
+}
+.pricing-modern-section .pricing-plan-card.is-featured .pricing-action:hover {
+  background: var(--ztc-text-text-2);
+  color: var(--ztc-text-text-1);
+}
+.pricing-modern-section .pricing-process-row {
+  margin-top: 26px;
+  border-radius: 12px;
+  background: var(--ztc-text-text-1);
+  border: 1px solid rgba(0, 112, 60, 0.1);
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: 24px;
+  align-items: center;
+  padding: 26px;
+}
+.pricing-modern-section .process-copy h3 {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s24);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 30px;
+  margin: 0 0 8px;
+}
+.pricing-modern-section .process-copy p {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  line-height: 24px;
+  margin: 0;
+  opacity: 0.8;
+}
+.pricing-modern-section .process-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.pricing-modern-section .process-steps div {
+  min-height: 84px;
+  border-radius: 8px;
+  background: #F2F6F4;
+  padding: 16px;
+}
+.pricing-modern-section .process-steps span {
+  color: var(--ztc-bg-bg-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s14);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+.pricing-modern-section .process-steps strong {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 22px;
+  display: block;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .pricing-modern-section .pricing-modern-intro,
+  .pricing-modern-section .pricing-process-row {
+    grid-template-columns: 1fr;
+  }
+  .pricing-modern-section .pricing-trust-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pricing-modern-section .pricing-plan-grid {
+    grid-template-columns: 1fr;
+  }
+  .pricing-modern-section .pricing-plan-card.is-featured {
+    transform: none;
+  }
+}
+@media (max-width: 767px) {
+  .pricing-modern-section.sp8 {
+    padding: 70px 0;
+  }
+  .pricing-modern-section .pricing-modern-intro {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .pricing-modern-section .pricing-modern-intro .heading1 h2 {
+    font-size: var(--ztc-font-size-font-s32);
+    line-height: 40px;
+  }
+  .pricing-modern-section .pricing-trust-strip,
+  .pricing-modern-section .pricing-plan-grid,
+  .pricing-modern-section .pricing-process-row,
+  .pricing-modern-section .process-steps {
+    grid-template-columns: 1fr;
+  }
+  .pricing-modern-section .pricing-plan-card {
+    padding: 24px;
+  }
+  .pricing-modern-section .pricing-plan-card.is-featured {
+    transform: none;
+  }
+  .pricing-modern-section .plan-price {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .pricing-modern-section .plan-price-text {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
 
 /*============= PRICING CSS AREA ENDS ===============*/
 /*============= MISSION_VISSON CSS AREA STARTS ===============*/
@@ -21797,6 +22431,12 @@ Location:
   border-radius: 16px;
   margin-left: 30px;
 }
+.testimonial1-section-area .testimonial-slider-area .slick-list {
+  transition: height 0.35s ease;
+}
+.testimonial1-section-area .testimonial-slider-area .slick-slide {
+  height: auto;
+}
 @media (max-width: 767px) {
   .testimonial1-section-area .testimonial-slider-area {
     margin-top: 30px;
@@ -21814,10 +22454,23 @@ Location:
   z-index: 1;
   padding: 34px 48px;
   border-radius: 16px;
+  min-height: 436px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial1-section-area .testimonial-slider-area .testimonial-box > img {
+  align-self: flex-start;
+  flex: 0 0 auto;
+  height: auto;
+  width: 64px;
 }
 @media (max-width: 767px) {
   .testimonial1-section-area .testimonial-slider-area .testimonial-box {
     padding: 30px;
+    min-height: 520px;
+  }
+  .testimonial1-section-area .testimonial-slider-area .testimonial-box > img {
+    width: 48px;
   }
 }
 .testimonial1-section-area .testimonial-slider-area .testimonial-box p {
@@ -21830,16 +22483,56 @@ Location:
   display: inline-block;
   transition: all 0.4s;
 }
+.testimonial1-section-area .testimonial-slider-area .testimonial-box .testimonial-review-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.testimonial1-section-area .testimonial-slider-area .testimonial-box.is-expanded {
+  min-height: 0;
+}
+.testimonial1-section-area .testimonial-slider-area .testimonial-box.is-expanded .testimonial-review-text {
+  display: block;
+  overflow: visible;
+}
+.testimonial1-section-area .testimonial-slider-area .testimonial-read-toggle {
+  align-self: flex-start;
+  border: 0;
+  background: rgba(2, 109, 57, 0.1);
+  border-radius: 999px;
+  color: var(--ztc-text-text-4);
+  display: none;
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 1;
+  margin-top: 16px;
+  padding: 11px 18px;
+  transition: all 0.3s;
+}
+.testimonial1-section-area .testimonial-slider-area .testimonial-read-toggle:hover {
+  background: var(--ztc-text-text-4);
+  color: var(--ztc-text-text-1);
+}
+.testimonial1-section-area .testimonial-slider-area .testimonial-box.has-long-review .testimonial-read-toggle {
+  display: inline-flex;
+}
 @media (max-width: 767px) {
   .testimonial1-section-area .testimonial-slider-area .testimonial-box p {
     font-size: var(--ztc-font-size-font-s18);
     line-height: 30px;
+  }
+  .testimonial1-section-area .testimonial-slider-area .testimonial-box .testimonial-review-text {
+    -webkit-line-clamp: 6;
   }
 }
 .testimonial1-section-area .testimonial-slider-area .testimonial-box .test-images {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: auto;
+  padding-top: 24px;
 }
 @media (max-width: 767px) {
   .testimonial1-section-area .testimonial-slider-area .testimonial-box .test-images {
@@ -22752,6 +23445,136 @@ Location:
   z-index: 2;
 }
 
+/*============= AWARDS GALLERY CSS AREA STARTS ===============*/
+.awards-gallery-section-area {
+  position: relative;
+  z-index: 1;
+}
+
+.awards-gallery-section-area .awards-gallery-heading h5 {
+  text-transform: capitalize;
+}
+
+.awards-gallery-section-area .awards-gallery-rail {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 4px 18px;
+  scroll-snap-type: x mandatory;
+  scrollbar-color: var(--ztc-bg-bg-3) #e8efec;
+  scrollbar-width: thin;
+}
+
+.awards-gallery-section-area .awards-gallery-rail::-webkit-scrollbar {
+  height: 8px;
+}
+
+.awards-gallery-section-area .awards-gallery-rail::-webkit-scrollbar-track {
+  background: #e8efec;
+  border-radius: 999px;
+}
+
+.awards-gallery-section-area .awards-gallery-rail::-webkit-scrollbar-thumb {
+  background: var(--ztc-bg-bg-3);
+  border-radius: 999px;
+}
+
+.awards-gallery-section-area .award-showcase-card {
+  flex: 0 0 min(380px, 86vw);
+  background: var(--ztc-bg-bg-1);
+  border: 1px solid #dfe9e4;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(6, 51, 31, 0.1);
+  overflow: hidden;
+  scroll-snap-align: start;
+}
+
+.awards-gallery-section-area .award-showcase-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.awards-gallery-section-area .award-showcase-content {
+  padding: 22px;
+}
+
+.awards-gallery-section-area .award-showcase-content span {
+  display: inline-flex;
+  align-items: center;
+  color: var(--ztc-bg-bg-3);
+  background: #edf6f2;
+  border-radius: 4px;
+  font-size: var(--ztc-font-size-font-s14);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 1;
+  margin-bottom: 14px;
+  padding: 8px 10px;
+}
+
+.awards-gallery-section-area .award-showcase-content h3 {
+  color: var(--ztc-text-text-2);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s22);
+  font-weight: var(--ztc-weight-semibold);
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.awards-gallery-section-area .award-showcase-content p {
+  color: var(--ztc-text-text-3);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-medium);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.awards-gallery-section-area .award-showcase-content a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ztc-bg-bg-4);
+  font-family: var(--ztc-family-font1);
+  font-size: var(--ztc-font-size-font-s16);
+  font-weight: var(--ztc-weight-semibold);
+  margin-top: 16px;
+  transition: all 0.4s;
+}
+
+.awards-gallery-section-area .award-showcase-content a:hover {
+  color: var(--ztc-bg-bg-3);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .awards-gallery-section-area .award-showcase-card {
+    flex-basis: min(340px, 72vw);
+  }
+}
+
+@media (max-width: 767px) {
+  .awards-gallery-section-area .awards-gallery-rail {
+    gap: 18px;
+    margin-right: -12px;
+    padding-bottom: 16px;
+  }
+
+  .awards-gallery-section-area .award-showcase-card {
+    flex-basis: min(300px, 82vw);
+  }
+
+  .awards-gallery-section-area .award-showcase-content {
+    padding: 18px;
+  }
+
+  .awards-gallery-section-area .award-showcase-content h3 {
+    font-size: var(--ztc-font-size-font-s20);
+  }
+}
+/*============= AWARDS GALLERY CSS AREA ENDS ===============*/
+
 .property2-location-section-area {
   position: relative;
   z-index: 1;
@@ -23142,6 +23965,143 @@ Location:
   background: var(--ztc-bg-bg-4);
   color: var(--ztc-text-text-1);
   transition: all 0.4s;
+}
+
+.video-gallery-section .video-gallery-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin: -28px 0 22px;
+}
+.video-gallery-section .video-gallery-arrow {
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(0, 112, 60, 0.18);
+  border-radius: 50%;
+  background: #fff;
+  color: var(--ztc-bg-bg-4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(13, 15, 24, 0.1);
+  transition: all 0.25s ease;
+}
+.video-gallery-section .video-gallery-arrow:hover {
+  background: var(--ztc-bg-bg-4);
+  color: var(--ztc-text-text-1);
+}
+.video-gallery-section .video-gallery-rail {
+  flex-wrap: nowrap;
+  gap: 24px;
+  margin-left: 0;
+  margin-right: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 4px 4px 20px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 112, 60, 0.45) transparent;
+}
+.video-gallery-section .video-gallery-rail::-webkit-scrollbar {
+  height: 8px;
+}
+.video-gallery-section .video-gallery-rail::-webkit-scrollbar-track {
+  background: transparent;
+}
+.video-gallery-section .video-gallery-rail::-webkit-scrollbar-thumb {
+  background: rgba(0, 112, 60, 0.38);
+  border-radius: 999px;
+}
+.video-gallery-section .video-gallery-rail > [class*="col-"] {
+  flex: 0 0 calc((100% - 72px) / 4);
+  max-width: calc((100% - 72px) / 4);
+  padding-left: 0;
+  padding-right: 0;
+  scroll-snap-align: start;
+}
+.video-gallery-section .project-featured-box {
+  height: 100%;
+  min-height: 398px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  margin-bottom: 0;
+  border-radius: 12px;
+  text-align: left;
+}
+.video-gallery-section .project-featured-box .space20,
+.video-gallery-section .project-featured-box .space24 {
+  display: none;
+}
+.video-gallery-section .project-featured-box .img1 {
+  width: 100%;
+  border-radius: 12px !important;
+  background: #e8eceb;
+}
+.video-gallery-section .project-featured-box .img1 iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+}
+.video-gallery-section .project-featured-box h5 {
+  min-height: 48px;
+  margin: 0;
+  color: var(--ztc-text-text-2);
+  font-size: 18px;
+  line-height: 24px;
+}
+.video-gallery-section .project-featured-box p {
+  min-height: 96px;
+  margin: 0;
+  color: var(--ztc-text-text-3);
+  text-align: left;
+  font-size: 15px;
+  line-height: 24px;
+  opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.video-gallery-section .project-featured-box .btn-area {
+  margin-top: auto;
+  width: 100%;
+}
+.video-gallery-section .project-featured-box .btn-area a {
+  width: 100%;
+  color: var(--ztc-text-text-1);
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: var(--ztc-weight-semibold);
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: var(--ztc-bg-bg-4);
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .video-gallery-section .video-gallery-rail > [class*="col-"] {
+    flex-basis: calc((100% - 24px) / 2);
+    max-width: calc((100% - 24px) / 2);
+  }
+}
+@media (max-width: 767px) {
+  .video-gallery-section .video-gallery-controls {
+    justify-content: center;
+    margin: -18px 0 18px;
+  }
+  .video-gallery-section .video-gallery-rail {
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+  .video-gallery-section .video-gallery-rail > [class*="col-"] {
+    flex-basis: 86%;
+    max-width: 86%;
+  }
+  .video-gallery-section .project-featured-box {
+    min-height: 380px;
+  }
 }
 
 .project4-section-area {
