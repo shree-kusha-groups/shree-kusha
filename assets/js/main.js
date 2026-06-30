@@ -147,9 +147,13 @@
   //========== TESTIMONIAL AREA ============= //
 
   //========== SLIDER ============= //
-  $(".hero-area-slider").slick({
+  var heroSlider = $(".hero-area-slider");
+  heroSlider.find(".hero-award-slide").prependTo(heroSlider);
+  heroSlider.find(".hero-brand-slide").insertAfter(heroSlider.find(".hero-award-slide"));
+
+  heroSlider.slick({
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 10000,
     speed: 1500,
     slidesToShow: 1,
     slidesToScroll: 1,
