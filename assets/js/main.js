@@ -261,6 +261,19 @@
 
   setupTestimonialReadMore();
 
+  function syncTestimonialReadMoreFocus() {
+    $(".slider1 .testimonial-box").each(function () {
+      var slide = $(this);
+      var isHidden = slide.attr("aria-hidden") === "true";
+      slide.find(".testimonial-read-toggle")
+        .prop("disabled", isHidden)
+        .attr("tabindex", isHidden ? "-1" : "0");
+    });
+  }
+
+  $(".slider1").on("afterChange reInit setPosition", syncTestimonialReadMoreFocus);
+  syncTestimonialReadMoreFocus();
+
   $(document).on("click", ".testimonial-read-toggle", function () {
     var button = $(this);
     var box = button.closest(".testimonial-box");
@@ -679,18 +692,15 @@
   //========== SLIDER ============= //
 
   //========== PRELOADER ============= //
-  $(window).on("load", function (event) {
-    setTimeout(function () {
-      $(".preloader").fadeToggle();
-    }, 200);
-
-  });
+  $(".preloader").hide();
   //========== PRELOADER BAR AREA ============= //
 
 })(jQuery);
 
 //========== TEXT_ANIMATION AREA ============= //
-if ($('.text-anime-style-1').length) {
+const motionLibrariesAvailable = typeof gsap !== 'undefined' && typeof SplitText !== 'undefined';
+
+if (motionLibrariesAvailable && $('.text-anime-style-1').length) {
   let staggerAmount = 0.05,
     translateXValue = 0,
     delayValue = 0.5,
@@ -709,7 +719,7 @@ if ($('.text-anime-style-1').length) {
   });
 }
 
-if ($('.text-anime-style-2').length) {
+if (motionLibrariesAvailable && $('.text-anime-style-2').length) {
   let staggerAmount = 0.05,
     translateXValue = 20,
     delayValue = 0.5,
@@ -730,7 +740,7 @@ if ($('.text-anime-style-2').length) {
   });
 }
 
-if ($('.text-anime-style-3').length) {
+if (motionLibrariesAvailable && $('.text-anime-style-3').length) {
   let animatedTextElements = document.querySelectorAll('.text-anime-style-3');
 
   animatedTextElements.forEach((element) => {
@@ -765,7 +775,7 @@ if ($('.text-anime-style-3').length) {
 //========== TEXT_ANIMATION AREA ============= //
 
 //========== IMAGE ANIMATION ============= //
-if ($('.reveal').length) { gsap.registerPlugin(ScrollTrigger); let revealContainers = document.querySelectorAll(".reveal"); revealContainers.forEach((container) => { let image = container.querySelector("img"); let tl = gsap.timeline({ scrollTrigger: { trigger: container, toggleActions: "play none none none" } }); tl.set(container, { autoAlpha: 1 }); tl.from(container, 1.5, { xPercent: -100, ease: Power2.out }); tl.from(image, 1.5, { xPercent: 100, scale: 1.3, delay: -1.5, ease: Power2.out }); }); }
+if (motionLibrariesAvailable && typeof ScrollTrigger !== 'undefined' && $('.reveal').length) { gsap.registerPlugin(ScrollTrigger); let revealContainers = document.querySelectorAll(".reveal"); revealContainers.forEach((container) => { let image = container.querySelector("img"); let tl = gsap.timeline({ scrollTrigger: { trigger: container, toggleActions: "play none none none" } }); tl.set(container, { autoAlpha: 1 }); tl.from(container, 1.5, { xPercent: -100, ease: Power2.out }); tl.from(image, 1.5, { xPercent: 100, scale: 1.3, delay: -1.5, ease: Power2.out }); }); }
 //========== IMAGE ANIMATION ============= //
 
 //========== RENT_SALE TAB ============= //
@@ -786,6 +796,10 @@ tabButtons.forEach((button) => {
 
 //========== SWIPER SLIDER ============= //
 document.addEventListener("DOMContentLoaded", function () {
+  if (typeof Swiper === 'undefined') {
+    return;
+  }
+
   var swiper3 = new Swiper(".swiper-thumb2", {
     spaceBetween: 10,
     slidesPerView: 6,

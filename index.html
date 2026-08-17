@@ -20,6 +20,10 @@
   <meta name="author" content="MelioraDesigns">
   <meta name="theme-color" content="#026D39">
 
+  <link rel="preload" as="image" href="assets/img/background/background-new-1.webp" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="assets/css/fonts/fa-solid-900.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="assets/css/fonts/fa-brands-400.woff2" crossorigin>
+
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Shree Kusha Ventures">
@@ -61,18 +65,17 @@
   <!--===== CSS LINK =======-->
   <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/plugins/aos.css">
-  <link rel="stylesheet" href="assets/css/plugins/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
   <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/plugins/mobile.css">
   <link rel="stylesheet" href="assets/css/plugins/owlcarousel.min.css">
   <link rel="stylesheet" href="assets/css/plugins/sidebar.css">
   <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
   <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
-  <link rel="stylesheet" href="assets/css/plugins/swiper-slider.css">
-  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/main.min.css?v=20260817-perf">
 
   <!--=====  JS SCRIPT LINK =======-->
-  <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+  <script defer src="assets/js/plugins/jquery-3-7-1.min.js"></script>
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -118,16 +121,6 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4357FBR"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-
-  <!--===== PRELOADER STARTS =======-->
-  <div class="preloader">
-    <div class="loading-container">
-      <div class="loading"></div>
-      <div id="loading-icon"><img src="assets/img/logo/preloader.png" alt="shree-kusha-ventures"></div>
-    </div>
-  </div>
-  <!--===== PRELOADER ENDS =======-->
-
   <!--===== PROGRESS STARTS=======-->
   <div class="paginacontainer">
     <div class="progress-wrap">
@@ -171,7 +164,7 @@
             </div>
             <div class="header-elements">
               <div class="site-logo">
-                <a href="/"><img src="assets/img/logo/shree_kusha_logo_1.png" alt="Shree Kusha Groups Logo"></a>
+                <a href="/"><img src="assets/img/logo/shree_kusha_logo_1.png" alt="Shree Kusha Groups Logo" width="440" height="160" decoding="async"></a>
               </div>
               <div class="main-menu">
                 <ul>
@@ -215,7 +208,7 @@
       <div class="col-12">
         <div class="mobile-header-elements">
           <div class="mobile-logo">
-            <a href="/"><img src="assets/img/logo/shree_kusha_logo_1.png" alt="shree-kusha-ventures"></a>
+            <a href="/"><img src="assets/img/logo/shree_kusha_logo_1.png" alt="shree-kusha-ventures" width="440" height="160" decoding="async"></a>
           </div>
           <div class="mobile-right d-flex gap-1 align-items-center">
 
@@ -233,7 +226,7 @@
   <div class="mobile-sidebar mobile-sidebar1">
     <div class="logosicon-area">
       <div class="logos">
-        <img src="assets/img/logo/shree_kusha_logo_1.png" alt="shree-kusha-ventures">
+        <img src="assets/img/logo/shree_kusha_logo_1.png" alt="shree-kusha-ventures" width="440" height="160" decoding="async">
       </div>
       <div class="menu-close">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -303,13 +296,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
 
             </div>
             <div class="single-footer">
-              <h5>Social Links</h5>
+              <h5 role="heading" aria-level="4">Social Links</h5>
               <div class="social-links-mobile-menu">
                 <ul>
-                  <li><a href="https://facebook.com/shreekushaventures" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href="https://www.instagram.com/shreekushaventures/"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                  <li><a href="https://www.youtube.com/@Shreekushaventures"><i class="fa-brands fa-youtube"></i></a></li>
+                  <li><a href="https://facebook.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                  <li><a href="https://www.instagram.com/shreekushaventures/" aria-label="Shree Kusha Ventures on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                  <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                  <li><a href="https://www.youtube.com/@Shreekushaventures" aria-label="Shree Kusha Ventures on YouTube"><i class="fa-brands fa-youtube"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -320,15 +313,16 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
   </div>
   <!--===== MOBILE HEADER STARTS =======-->
 
+<main id="main-content">
 <!--===== HERO AREA STARTS =======-->
 <div class="hero-area-slider">
   <div class="hero1-section-area">
-    <img src="assets/img/background/background-new-1.png" alt="shree-kusha-ventures" class="hero-img1">
+    <img src="assets/img/background/background-new-1.webp" alt="shree-kusha-ventures" class="hero-img1" width="1536" height="1024" decoding="async" fetchpriority="high">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="hero-header-area text-center">
-            <h5>Empowering Your Journey to Land Ownership</h5>
+            <h5 role="presentation">Empowering Your Journey to Land Ownership</h5>
             <div class="space32"></div>
             <h1>Build Your Future with Shree Kusha Ventures</h1>
             <div class="space40"></div>
@@ -352,12 +346,12 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
   </div>
 
   <div class="hero1-section-area">
-    <img src="assets/img/background/backround-img2.png" alt="shree-kusha-ventures" class="hero-img1">
+    <img src="assets/img/background/backround-img2.webp" alt="shree-kusha-ventures" class="hero-img1" width="1440" height="598" decoding="async" loading="lazy" fetchpriority="low">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="hero-header-area text-center">
-            <h5>Your Trustworthy Partner in Real Estate Growth</h5>
+            <h5 role="presentation">Your Trustworthy Partner in Real Estate Growth</h5>
             <div class="space32"></div>
             <h2>Premium Plots for Every Dream</h2>
             <div class="space40"></div>
@@ -382,9 +376,9 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
 
   <div class="hero1-section-area hero-brand-slide">
     <picture>
-      <source media="(max-width: 767px)" srcset="assets/img/background/background-new-2-mobile.png?v=20260701-farm-v2">
-      <source media="(max-width: 1199px)" srcset="assets/img/background/background-new-2-tablet.png?v=20260701-farm-v2">
-      <img src="assets/img/background/background-new-2-desktop.png?v=20260701-farm-v2" alt="Shree Kusha Ventures - HMDA / DTCP / Farm Lands" class="hero-img1 hero-brand-img">
+      <source media="(max-width: 767px)" srcset="assets/img/background/background-new-2-mobile.webp?v=20260701-farm-v2">
+      <source media="(max-width: 1199px)" srcset="assets/img/background/background-new-2-tablet.webp?v=20260701-farm-v2">
+      <img src="assets/img/background/background-new-2-desktop.webp?v=20260701-farm-v2" alt="Shree Kusha Ventures - HMDA / DTCP / Farm Lands" class="hero-img1 hero-brand-img" width="1600" height="900" decoding="async" loading="lazy" fetchpriority="low">
     </picture>
     <div class="container" style="margin-top: 50px;">
       <div class="row">
@@ -416,9 +410,9 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
   <div class="hero1-section-area hero-award-slide">
     <a class="hero-brand-link" href="https://www.aninews.in/news/business/prasanna-kumar-ballipagu-of-shree-kusha-ventures-honoured-by-saina-nehwal-as-telanganas-best-premium-plot-developer-202620260325141110/" target="_blank" rel="noopener" aria-label="Read ANI coverage of Shree Kusha Ventures being honoured by Saina Nehwal">
       <picture>
-        <source media="(max-width: 767px)" srcset="assets/img/background/ani-award-hero-mobile.png">
-        <source media="(max-width: 1199px)" srcset="assets/img/background/ani-award-hero-tablet.png">
-        <img src="assets/img/background/ani-award-hero-desktop.png" alt="Prasanna Kumar Ballipagu of Shree Kusha Ventures honoured by Saina Nehwal as Telangana's Best Premium Plot Developer 2026" class="hero-img1 hero-brand-img">
+        <source media="(max-width: 767px)" srcset="assets/img/background/ani-award-hero-mobile.webp">
+        <source media="(max-width: 1199px)" srcset="assets/img/background/ani-award-hero-tablet.webp">
+        <img src="assets/img/background/ani-award-hero-desktop.webp" alt="Prasanna Kumar Ballipagu of Shree Kusha Ventures honoured by Saina Nehwal as Telangana's Best Premium Plot Developer 2026" class="hero-img1 hero-brand-img" width="1600" height="900" decoding="async" loading="lazy" fetchpriority="low">
       </picture>
     </a>
     <div class="container" style="margin-top: 50px;">
@@ -444,10 +438,10 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
 </div>
 <div class="testimonial-arrows">
   <div class="testimonial-prev-arrow">
-    <button><i class="fa-solid fa-angle-left"></i></button>
+    <button type="button" aria-label="Previous hero slide"><i class="fa-solid fa-angle-left" aria-hidden="true"></i></button>
   </div>
   <div class="testimonial-next-arrow">
-    <button><i class="fa-solid fa-angle-right"></i></button>
+    <button type="button" aria-label="Next hero slide"><i class="fa-solid fa-angle-right" aria-hidden="true"></i></button>
   </div>
 </div>
 <!--===== HERO AREA ENDS =======-->
@@ -835,23 +829,23 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
       <div class="row align-items-center">
         <div class="col-lg-7">
           <div class="about-images-area">
-            <div class="img2 image-anime reveal" hidden="true">
-              <img src="assets/img/all-images/about/about-img2.png" alt="shree-kusha-ventures">
+            <div class="img2 image-anime" hidden="true">
+              <img src="assets/img/all-images/about/about-img2.png" alt="shree-kusha-ventures" width="441" height="245" decoding="async" loading="lazy">
             </div>
-            <div class="img1 image-anime reveal">
-              <img style="height: 650px !important;" src="assets/img/about/about_img_1.png" alt="about-shree-kusha-ventures">
+            <div class="img1 image-anime">
+              <img style="height: 650px !important;" src="assets/img/about/about_img_1.webp" alt="about-shree-kusha-ventures" width="900" height="1350" decoding="async" loading="lazy">
             </div>
             <div class="author-img aniamtion-key-1" hidden="true">
               <h3>Our Happy Customer</h3>
               <div class="space18"></div>
-              <img src="assets/img/all-images/others/author-img1.png" alt="shree-kusha-ventures">
+              <img src="assets/img/all-images/others/author-img1.png" alt="shree-kusha-ventures" width="236" height="56" decoding="async" loading="lazy">
             </div>
           </div>
         </div>
 
          <div class="col-lg-5">
           <div class="about-heading heading1">
-            <h5 data-aos="fade-left" data-aos-duration="800">About Shree Kusha</h5>
+            <h5 role="presentation" data-aos="fade-left" data-aos-duration="800">About Shree Kusha</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">Building Dreams on a Foundation of Trust</h2>
             <div class="space18"></div>
@@ -909,7 +903,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
       <div class="row">
         <div class="col-lg-6 m-auto">
           <div class="property-heading heading1 text-center space-margin60">
-            <h5>Featured Properties</h5>
+            <h5 role="presentation">Featured Properties</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">Our Featured Properties</h2>
           </div>
@@ -960,7 +954,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img1.png" alt="Future Villa City">
+                          <img src="assets/img/all-images/properties/property-img1.webp" alt="Future Villa City" width="740" height="540" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -974,13 +968,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Srisailam Highway, Hyderabad</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">Clubhouse</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Swimming Pool</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">93 Plots / 28–93 Acres</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">Clubhouse</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Swimming Pool</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">93 Plots / 28–93 Acres</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="kadathal-plots.html" class="nm-btn">Gated Community</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -990,7 +984,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img2.png" alt="Shree Kusha DTCP Project">
+                          <img src="assets/img/all-images/properties/property-img2.webp" alt="Shree Kusha DTCP Project" width="740" height="540" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1004,13 +998,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Kadthal, Srisailam Highway</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">40 Plots</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Children’s Park</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">40 Acres</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">40 Plots</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Children’s Park</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">40 Acres</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="kadathal-plots.html" class="nm-btn">Spot Registration</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1020,7 +1014,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img3.png" alt="Shree Kusha Farm Land">
+                          <img src="assets/img/all-images/properties/property-img3.webp" alt="Shree Kusha Farm Land" width="1000" height="750" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1034,13 +1028,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Peddapur, Mumbai Highway – Sangareddy</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">Model House</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Clubhouse</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">30 Plots / 30 Acres</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">Model House</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Clubhouse</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">30 Plots / 30 Acres</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="javascript:void(0)" class="nm-btn">100% Vastu</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1051,7 +1045,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/shree-kusha-farm-city.png" alt="SHREE KUSHA FARM CITY">
+                          <img src="assets/img/all-images/properties/shree-kusha-farm-city.webp" alt="SHREE KUSHA FARM CITY" width="760" height="519" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1065,13 +1059,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Kandukur, Rangareddy District, Hyderabad</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">242-1210 Sq. Yards</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Monthly Income Plans</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">3 & 5 Year Plans</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">242-1210 Sq. Yards</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Monthly Income Plans</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">3 & 5 Year Plans</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="https://github.com/shree-kusha-groups/documents/raw/main/Shree_Kusha_Future_Greens_Income_Plans.pdf" target="_blank" rel="noopener" download class="nm-btn">Future Greens Farmland</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1081,7 +1075,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img4.png" alt="Villa Town">
+                          <img src="assets/img/all-images/properties/property-img4.webp" alt="Villa Town" width="1000" height="750" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1095,13 +1089,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Balanagar, Bangalore Highway</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">DTCP Approved</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Black-topped Roads</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">Sold Out</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">DTCP Approved</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Black-topped Roads</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">Sold Out</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="javascript:void(0)" class="nm-btn">Fully Developed</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1111,7 +1105,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img5.png" alt="Smart City">
+                          <img src="assets/img/all-images/properties/property-img5.webp" alt="Smart City" width="740" height="540" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1125,13 +1119,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Sadasivapet, Mumbai Highway</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">DTCP Approved</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Green Parks</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">Sold Out</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">DTCP Approved</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Green Parks</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">Sold Out</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="javascript:void(0)" class="nm-btn">Successfully Delivered</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1145,7 +1139,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img1.png" alt="Future Villa City">
+                          <img src="assets/img/all-images/properties/property-img1.webp" alt="Future Villa City" width="740" height="540" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1159,13 +1153,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Srisailam Highway, Hyderabad</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">Clubhouse</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Swimming Pool</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">28–93 Acres</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">Clubhouse</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Swimming Pool</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">28–93 Acres</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="kadathal-plots.html" class="nm-btn">DTCP & HMDA Plots</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1174,7 +1168,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img2.png" alt="Shree Kusha DTCP">
+                          <img src="assets/img/all-images/properties/property-img2.webp" alt="Shree Kusha DTCP" width="740" height="540" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1188,13 +1182,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Kadthal, Srisailam Highway</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">40 Acres</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Gated Community</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">Premium Layout</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">40 Acres</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Gated Community</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">Premium Layout</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="kadathal-plots.html" class="nm-btn">RERA Registered</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1208,7 +1202,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img3.png" alt="Shree Kusha Farm Land">
+                          <img src="assets/img/all-images/properties/property-img3.webp" alt="Shree Kusha Farm Land" width="1000" height="750" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1222,13 +1216,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Peddapur, Mumbai Highway – Sangareddy</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">Model House</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Clubhouse & Pool</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">30 Plots / 30 Acres</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">Model House</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Clubhouse & Pool</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">30 Plots / 30 Acres</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="javascript:void(0)" class="nm-btn">100% Vastu • Avenue Plantation</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1237,7 +1231,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/shree-kusha-farm-city.png" alt="SHREE KUSHA FARM CITY">
+                          <img src="assets/img/all-images/properties/shree-kusha-farm-city.webp" alt="SHREE KUSHA FARM CITY" width="760" height="519" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1251,13 +1245,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Kandukur, Rangareddy District, Hyderabad</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">242-1210 Sq. Yards</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Monthly Income Plans</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">3 & 5 Year Plans</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">242-1210 Sq. Yards</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Monthly Income Plans</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">3 & 5 Year Plans</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="https://github.com/shree-kusha-groups/documents/raw/main/Shree_Kusha_Future_Greens_Income_Plans.pdf" target="_blank" rel="noopener" download class="nm-btn">Future Greens Farmland</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1272,7 +1266,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img4.png" alt="Villa Town">
+                          <img src="assets/img/all-images/properties/property-img4.webp" alt="Villa Town" width="1000" height="750" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1286,13 +1280,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Balanagar, Bangalore Highway</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">DTCP Approved</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Black-topped Roads</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">Fully Developed</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">DTCP Approved</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Black-topped Roads</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">Fully Developed</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="javascript:void(0)" class="nm-btn">Project Delivered</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1301,7 +1295,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="col-lg-4 col-md-6">
                       <div class="property-boxarea">
                         <div class="img1 image-anime">
-                          <img src="assets/img/all-images/properties/property-img5.png" alt="Smart City">
+                          <img src="assets/img/all-images/properties/property-img5.webp" alt="Smart City" width="740" height="540" decoding="async" loading="lazy">
                         </div>
                         <div class="category-list">
                           <ul>
@@ -1315,13 +1309,13 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                           <p>Sadasivapet, Mumbai Highway</p>
                           <div class="space24"></div>
                           <ul>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon">DTCP Approved</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon">Green Parks</a></li>
-                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon">Successfully Delivered</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bed1.svg" alt="icon" decoding="async" loading="lazy">DTCP Approved</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/bath1.svg" alt="icon" decoding="async" loading="lazy">Green Parks</a></li>
+                            <li><a href="javascript:void(0)"><img src="assets/img/icons/sqare1.svg" alt="icon" decoding="async" loading="lazy">Successfully Delivered</a></li>
                           </ul>
                           <div class="btn-area">
                             <a href="javascript:void(0)" class="nm-btn">Project Delivered</a>
-                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2"></a>
+                            <a hidden="true" href="javascript:void(0)" class="heart"><img src="assets/img/icons/heart1.svg" alt="icon" class="heart1" decoding="async" loading="lazy"> <img src="assets/img/icons/heart2.svg" alt="icon" class="heart2" decoding="async" loading="lazy"></a>
                           </div>
                         </div>
                       </div>
@@ -1356,7 +1350,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="col-lg-4 col-md-6">
           <div class="project-featured-box">
             <div class="img1">
-              <img src="assets/img/all-images/project/project-img1.png" alt="shree-kusha-ventures">
+              <img src="assets/img/all-images/project/project-img1.png" alt="shree-kusha-ventures" width="272" height="140" decoding="async" loading="lazy">
             </div>
             <div class="space40"></div>
             <div class="blue btn-area">
@@ -1368,7 +1362,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="col-lg-4 col-md-6">
           <div class="project-featured-box">
             <div class="img1">
-              <img src="assets/img/all-images/project/project-img2.png" alt="shree-kusha-ventures">
+              <img src="assets/img/all-images/project/project-img2.png" alt="shree-kusha-ventures" width="276" height="140" decoding="async" loading="lazy">
             </div>
             <div class="space40"></div>
             <div class="blue btn-area">
@@ -1380,7 +1374,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="col-lg-4 col-md-6">
           <div class="project-featured-box">
             <div class="img1">
-              <img src="assets/img/all-images/project/project-img3.png" alt="shree-kusha-ventures">
+              <img src="assets/img/all-images/project/project-img3.png" alt="shree-kusha-ventures" width="190" height="140" decoding="async" loading="lazy">
             </div>
             <div class="space40"></div>
             <div class="blue btn-area">
@@ -1394,12 +1388,12 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
   <!--===== PROJECT AREA ENDS =======-->
 
   <!--===== ITEMS AREA STARTS =======-->
-  <div class="items-section-area sp1" style="background-image: url(assets/img/background/background-new-1.png); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
+  <div class="items-section-area sp1" style="background-image: url(assets/img/background/background-new-1.webp); background-position: center; background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-4">
           <div class="item-header heading1">
-            <h5 data-aos="fade-left" data-aos-duration="800">Explore Our Prime Ventures</h5>
+            <h5 role="presentation" data-aos="fade-left" data-aos-duration="800">Explore Our Prime Ventures</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">Featured Projects</h2>
             <div class="space16"></div>
@@ -1428,14 +1422,14 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
           <div class="box-slider">
             <!-- Featured Project 1 -->
             <div class="item-featured-boxarea" style="padding: 40px 60px;">
-              <h6><span>
+              <h6 role="presentation"><span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11.5L16 8L12.5 17.0021L11 13L7 11.5Z"></path>
                 </svg></span> Srisailam Highway, Kadthal</h6>
               <div class="space20"></div>
-              <h4>Future Villa City</h4>
+              <h4 role="heading" aria-level="3">Future Villa City</h4>
               <div class="space28"></div>
-              <h5>HMDA & RERA Approved | 28 Acres</h5>
+              <h5 role="presentation">HMDA & RERA Approved | 28 Acres</h5>
               <div class="space20"></div>
               <ul>
                 <li>Premium Gated Community</li>
@@ -1446,15 +1440,15 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
             </div>
             <!-- Featured Project 2 -->
             <div class="item-featured-boxarea" style="padding: 40px 60px;">
-              <h6><span>
+              <h6 role="presentation"><span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11.5L16 8L12.5 17.0021L11 13L7 11.5Z"></path>
                 </svg>
               </span> Srisailam Highway, Kadthal</h6>
               <div class="space20"></div>
-              <h4>Shree Kusha DTCP Project</h4>
+              <h4 role="heading" aria-level="3">Shree Kusha DTCP Project</h4>
               <div class="space28"></div>
-              <h5>DTCP Approved | 40 Acres</h5>
+              <h5 role="presentation">DTCP Approved | 40 Acres</h5>
               <div class="space20"></div>
               <ul>
                 <li>Clear Titles | Ready for Construction</li>
@@ -1466,15 +1460,15 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
             </div>
             <!-- Featured Project 3 -->
             <div class="item-featured-boxarea" style="padding: 40px 60px;">
-              <h6><span>
+              <h6 role="presentation"><span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11.5L16 8L12.5 17.0021L11 13L7 11.5Z"></path>
                 </svg>
               </span> Mumbai Highway, Sangareddy</h6>
               <div class="space20"></div>
-              <h4>Shree Kusha Farm Land</h4>
+              <h4 role="heading" aria-level="3">Shree Kusha Farm Land</h4>
               <div class="space28"></div>
-              <h5>Premium Gated Farm Land | 30 Acres</h5>
+              <h5 role="presentation">Premium Gated Farm Land | 30 Acres</h5>
               <div class="space20"></div>
               <ul>
                 <li>Clubhouse with Cottages, Swimming Pool</li>
@@ -1485,15 +1479,15 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
             </div>
             <!-- Featured Project 4 -->
             <div class="item-featured-boxarea" style="padding: 40px 60px;">
-              <h6><span>
+              <h6 role="presentation"><span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM7 11.5L16 8L12.5 17.0021L11 13L7 11.5Z"></path>
                 </svg>
               </span> Kandukur, Rangareddy District</h6>
               <div class="space20"></div>
-              <h4>SHREE KUSHA FARM CITY</h4>
+              <h4 role="heading" aria-level="3">SHREE KUSHA FARM CITY</h4>
               <div class="space28"></div>
-              <h5>Future Greens Farmland | Monthly Income Plans</h5>
+              <h5 role="presentation">Future Greens Farmland | Monthly Income Plans</h5>
               <div class="space20"></div>
               <ul>
                 <li>242-1210 Sq. Yards Plot Options</li>
@@ -1507,10 +1501,10 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="col-lg-1">
           <div class="testimonial-arrows">
             <div class="prev-arrow">
-              <button><i class="fa-solid fa-angle-up"></i></button>
+              <button type="button" aria-label="Previous featured project"><i class="fa-solid fa-angle-up" aria-hidden="true"></i></button>
             </div>
             <div class="next-arrow">
-              <button><i class="fa-solid fa-angle-down"></i></button>
+              <button type="button" aria-label="Next featured project"><i class="fa-solid fa-angle-down" aria-hidden="true"></i></button>
             </div>
           </div>
         </div>
@@ -1526,7 +1520,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
       <div class="row">
         <div class="col-lg-7 m-auto">
           <div class="awards-gallery-heading heading1 space-margin60 text-center">
-            <h5>Awards & Recognition</h5>
+            <h5 role="presentation">Awards & Recognition</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">Celebrating Our Recognition</h2>
           </div>
@@ -1534,7 +1528,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
       </div>
       <div class="awards-gallery-rail" data-aos="fade-up" data-aos-duration="1000" aria-label="Awards and recognition gallery">
         <article class="award-showcase-card">
-          <img src="assets/img/all-images/awards/saina-nehwal-best-premium-plot-developer-2026.jpg" alt="Saina Nehwal presenting Best Premium Plot Developer in Telangana 2026 award">
+          <img src="assets/img/all-images/awards/saina-nehwal-best-premium-plot-developer-2026.webp" alt="Saina Nehwal presenting Best Premium Plot Developer in Telangana 2026 award" width="696" height="522" decoding="async" loading="lazy">
           <div class="award-showcase-content">
             <span>ANI Coverage</span>
             <h3>Best Premium Plot Developer in Telangana 2026</h3>
@@ -1543,7 +1537,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
           </div>
         </article>
         <article class="award-showcase-card">
-          <img src="assets/img/all-images/awards/global-leadership-award-trophy.jpg" alt="Most Trusted Real Estate Company in Telangana 2026 trophy presentation">
+          <img src="assets/img/all-images/awards/global-leadership-award-trophy.webp" alt="Most Trusted Real Estate Company in Telangana 2026 trophy presentation" width="1000" height="667" decoding="async" loading="lazy">
           <div class="award-showcase-content">
             <span>Global Leadership Awards</span>
             <h3>Most Trusted Real Estate Company in Telangana 2026</h3>
@@ -1551,7 +1545,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
           </div>
         </article>
         <article class="award-showcase-card" style="display: none;">
-          <img src="assets/img/all-images/awards/global-leadership-award-stage.jpg" alt="Global Leadership Awards stage moment for trusted real estate company recognition">
+          <img src="assets/img/all-images/awards/global-leadership-award-stage.webp" alt="Global Leadership Awards stage moment for trusted real estate company recognition" width="1000" height="667" decoding="async" loading="lazy">
           <div class="award-showcase-content">
             <span>Global Leadership Awards</span>
             <h3>Trusted Real Estate Leadership Honour</h3>
@@ -1559,7 +1553,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
           </div>
         </article>
         <article class="award-showcase-card">
-          <img src="assets/img/all-images/awards/global-leadership-award-conversation.jpg" alt="Prasanna Kumar Ballipagu at trusted real estate company award ceremony">
+          <img src="assets/img/all-images/awards/global-leadership-award-conversation.webp" alt="Prasanna Kumar Ballipagu at trusted real estate company award ceremony" width="1000" height="667" decoding="async" loading="lazy">
           <div class="award-showcase-content">
             <span>Global Leadership Awards</span>
             <h3>Telangana Trust Recognition Moment</h3>
@@ -1568,7 +1562,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         </article>
         
         <article class="award-showcase-card" style="display: none;">
-          <img src="assets/img/all-images/awards/iconic-peace-award-certificate.jpg" alt="Iconic Peace Award Council doctorate certificate presentation to Dr. Prasanna Kumar Ballipagu">
+          <img src="assets/img/all-images/awards/iconic-peace-award-certificate.webp" alt="Iconic Peace Award Council doctorate certificate presentation to Dr. Prasanna Kumar Ballipagu" width="1000" height="666" decoding="async" loading="lazy">
           <div class="award-showcase-content">
             <span>Iconic Peace Award Council</span>
             <h3>Honorary Doctorate Invitation</h3>
@@ -1576,7 +1570,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
           </div>
         </article>
         <article class="award-showcase-card">
-          <img src="assets/img/all-images/awards/iconic-peace-award-trophy.jpg" alt="Iconic Ashoka Award trophy presentation to Dr. Prasanna Kumar Ballipagu">
+          <img src="assets/img/all-images/awards/iconic-peace-award-trophy.webp" alt="Iconic Ashoka Award trophy presentation to Dr. Prasanna Kumar Ballipagu" width="1000" height="666" decoding="async" loading="lazy">
           <div class="award-showcase-content">
             <span>Iconic Peace Award Council</span>
             <h3>Iconic Ashoka Award Honour</h3>
@@ -1584,7 +1578,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
           </div>
         </article>
         <article class="award-showcase-card">
-          <img src="assets/img/all-images/awards/iconic-peace-award-plaque.jpg" alt="Iconic Peace Award Council plaque presented to Dr. Prasanna Kumar Ballipagu">
+          <img src="assets/img/all-images/awards/iconic-peace-award-plaque.webp" alt="Iconic Peace Award Council plaque presented to Dr. Prasanna Kumar Ballipagu" width="1000" height="666" decoding="async" loading="lazy">
           <div class="award-showcase-content">
             <span>Iconic Peace Award Council</span>
             <h3>Ashoka Award Ceremony</h3>
@@ -1592,7 +1586,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
           </div>
         </article>
         <article class="award-showcase-card">
-          <img src="assets/img/all-images/awards/insights-success-cover.jpg" alt="Insights Success India cover story featuring real estate success">
+          <img src="assets/img/all-images/awards/insights-success-cover.webp" alt="Insights Success India cover story featuring real estate success" width="880" height="1156" decoding="async" loading="lazy">
           <div class="award-showcase-content">
             <span>Insights Success India</span>
             <h3>Real Estate Success Cover Story</h3>
@@ -1611,7 +1605,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
       <div class="row">
         <div class="col-lg-6 m-auto">
           <div class="project-heading heading1 space-margin60 text-center">
-            <h5>Our Showcase Projects</h5>
+            <h5 role="presentation">Our Showcase Projects</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">See Our Ventures in Action</h2>
             <div class="space20"></div>
@@ -1638,7 +1632,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Recognition: Premium Plot Development</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Recognition: Premium Plot Development</h5>
             <div class="space20"></div>
             <p>Watch coverage of Shree Kusha Ventures being recognized for premium plot development and continued focus on quality plotted communities.</p>
             <div class="space20"></div>
@@ -1657,7 +1651,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Recognition: Trusted Real Estate Company</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Recognition: Trusted Real Estate Company</h5>
             <div class="space20"></div>
             <p>See Shree Kusha Ventures recognized for trust and service in Telangana real estate, reflecting the commitment behind every customer relationship.</p>
             <div class="space20"></div>
@@ -1676,7 +1670,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Award Coverage: Premium Plot Development</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Award Coverage: Premium Plot Development</h5>
             <div class="space20"></div>
             <p>View additional media coverage highlighting Shree Kusha Ventures' recognition as a premium plot development company in Telangana.</p>
             <div class="space20"></div>
@@ -1695,7 +1689,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Best Places to Invest</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Best Places to Invest</h5>
             <div class="space20"></div>
             <p>Review location-led investment thinking and the factors that make planned ventures attractive for buyers seeking land in emerging areas.</p>
             <div class="space20"></div>
@@ -1714,7 +1708,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Media Feature: NTV Telugu</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Media Feature: NTV Telugu</h5>
             <div class="space20"></div>
             <p>Watch an investment-focused discussion on how careful location choice and planned development can support better real estate outcomes.</p>
             <div class="space20"></div>
@@ -1733,7 +1727,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Open Plots Investment Feature</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Open Plots Investment Feature</h5>
             <div class="space20"></div>
             <p>Explore why open plots remain a preferred investment category and how Shree Kusha Ventures focuses on clear planning, access, and customer confidence.</p>
             <div class="space20"></div>
@@ -1752,7 +1746,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Founder Perspective</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Founder Perspective</h5>
             <div class="space20"></div>
             <p>Hear the leadership perspective behind Shree Kusha Ventures, including customer-first planning, project selection, and long-term value creation.</p>
             <div class="space20"></div>
@@ -1771,7 +1765,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Media Feature: iNews</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Media Feature: iNews</h5>
             <div class="space20"></div>
             <p>Follow a discussion on real estate opportunities, premium plotted development, and the practical advantages of investing in well-connected locations.</p>
             <div class="space20"></div>
@@ -1790,7 +1784,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Open Plot Guidance</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Open Plot Guidance</h5>
             <div class="space20"></div>
             <p>Learn what buyers should consider before choosing an open plot, from approvals and access roads to future growth and transparent documentation.</p>
             <div class="space20"></div>
@@ -1809,7 +1803,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Media Feature: V6 News</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Media Feature: V6 News</h5>
             <div class="space20"></div>
             <p>See market insights on the right time to invest in real estate and how Shree Kusha Ventures helps customers evaluate location, planning, and value.</p>
             <div class="space20"></div>
@@ -1828,7 +1822,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Media Feature: T News Interview</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Media Feature: T News Interview</h5>
             <div class="space20"></div>
             <p>Watch Shree Kusha Ventures discuss open plot investment, growth corridors, and why planned land ownership continues to be a strong long-term choice for families.</p>
             <div class="space20"></div>
@@ -1844,10 +1838,10 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
               <iframe width="100%" height="215" src="https://www.youtube.com/embed/YPEDuQaVrag?si=Q6DYBkGKDVsrtZf7"
                 title="Shree Kusha Ventures - Location Advantage" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Location Advantage</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Location Advantage</h5>
             <div class="space20"></div>
             <p>Explore the strategic location of our ventures, with proximity to highways, schools, and amenities. See how Shree Kusha Ventures offers the perfect blend of connectivity and tranquility for your investment.</p>
             <div class="space20"></div>
@@ -1863,10 +1857,10 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
               <iframe width="100%" height="215" src="https://www.youtube.com/embed/gHXTJeXKSJY?si=N8Lj_c2gkOIXisqU"
                 title="Shree Kusha Ventures - Customer Testimonial" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;">Customer Experience: Testimonial</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;">Customer Experience: Testimonial</h5>
             <div class="space20"></div>
             <p>Listen to our happy customers share their journey with Shree Kusha Ventures—from the booking process to registration and handover. Discover why we are trusted by hundreds of families.</p>
             <div class="space20"></div>
@@ -1884,10 +1878,10 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
               <iframe width="100%" height="215" src="https://www.youtube.com/embed/ZMPia3kfMtU?si=nOPaFVknqYhR0zBz"
                 title="Shree Kusha Ventures - Venture Walkthrough" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+                allowfullscreen loading="lazy"></iframe>
             </div>
             <div class="space24"></div>
-            <h5 style="font-weight:600;"> Highlight: Venture Walkthrough</h5>
+            <h5 role="heading" aria-level="3" style="font-weight:600;"> Highlight: Venture Walkthrough</h5>
             <div class="space20"></div>
             <p>Get a detailed walk-through of our premier plotting venture, showcasing clear demarcation, lush surroundings, and ready-to-build infrastructure. Ideal for families looking to invest in a secure neighborhood.</p>
             <div class="space20"></div>
@@ -1909,7 +1903,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
       <div class="row">
         <div class="col-lg-6">
           <div class="testimonial-header space-margin60 heading1">
-            <h5 data-aos="fade-left" data-aos-duration="800">feedback/testimonial</h5>
+            <h5 role="presentation" data-aos="fade-left" data-aos-duration="800">feedback/testimonial</h5>
             <div class="space20"></div>
             <h2 class="text-anime-style-3">A Legacy Of Happy Clients</h2>
           </div>
@@ -1923,23 +1917,23 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
               <div class="col-lg-5" hidden="true">
                 <div class="images-area2 slider2">
                   <div class="img1 image-anime">
-                    <img src="assets/img/all-images/testimonial/testimonial-img1.png" alt="shree-kusha-ventures">
+                    <img src="assets/img/all-images/testimonial/testimonial-img1.png" alt="shree-kusha-ventures" width="460" height="400" decoding="async" loading="lazy">
                   </div>
                   <div class="img1 image-anime">
-                    <img src="assets/img/all-images/testimonial/testimonial-img1-1.png" alt="shree-kusha-ventures">
+                    <img src="assets/img/all-images/testimonial/testimonial-img1-1.png" alt="shree-kusha-ventures" width="460" height="400" decoding="async" loading="lazy">
                   </div>
                   <div class="img1 image-anime">
-                    <img src="assets/img/all-images/testimonial/testimonial-img1-2.png" alt="shree-kusha-ventures">
+                    <img src="assets/img/all-images/testimonial/testimonial-img1-2.png" alt="shree-kusha-ventures" width="460" height="400" decoding="async" loading="lazy">
                   </div>
                   <div class="img1 image-anime">
-                    <img src="assets/img/all-images/testimonial/testimonial-img1-3.png" alt="shree-kusha-ventures">
+                    <img src="assets/img/all-images/testimonial/testimonial-img1-3.png" alt="shree-kusha-ventures" width="460" height="400" decoding="async" loading="lazy">
                   </div>
                 </div>
               </div>
               <div class="col-lg-10">
                 <div class="testimonial-slider-area slider1">
                   <div class="testimonial-box">
-                    <img src="assets/img/icons/quoto-icon1.svg" alt="shreekusha">
+                    <img src="assets/img/icons/quoto-icon1.svg" alt="shreekusha" decoding="async" loading="lazy">
                     <div class="space16"></div>
                     <p>
                       If you’re planning to invest in HMDA plots, Shree Kusha Ventures is worth considering. The plots are located in a growth corridor with clean surroundings and good future potential. Documentation was quick and well-handled.
@@ -1948,7 +1942,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="test-images">
                       <div class="auhtor-area">
                         <div class="img1">
-                          <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="client">
+                          <img src="assets/img/all-images/testimonial/testimonial-img2.png" alt="client" width="80" height="80" decoding="async" loading="lazy">
                         </div>
                         <div class="text">
                           <a href="javascript:void(0)">- Ramya</a>
@@ -1961,7 +1955,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                   </div>
 
                   <div class="testimonial-box">
-                    <img src="assets/img/icons/quoto-icon1.svg" alt="shreekusha">
+                    <img src="assets/img/icons/quoto-icon1.svg" alt="shreekusha" decoding="async" loading="lazy">
                     <div class="space16"></div>
                     <p>
                       I’ve been exploring real estate options around Hyderabad, and Shree Kusha Ventures truly stands out as one of the top ventures I’ve come across. Their plots are in good locations, HMDA-approved, and pricing is fair with helpful EMI options – which is a big plus for middle-class buyers like me.
@@ -1974,7 +1968,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="test-images">
                       <div class="auhtor-area">
                         <div class="img1">
-                          <img src="assets/img/all-images/testimonial/testimonial-img3.png" alt="client">
+                          <img src="assets/img/all-images/testimonial/testimonial-img3.png" alt="client" width="500" height="320" decoding="async" loading="lazy">
                         </div>
                         <div class="text">
                           <a href="javascript:void(0)">- janani gollamandala</a>
@@ -1986,7 +1980,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                   </div>
 
                   <div class="testimonial-box">
-                    <img src="assets/img/icons/quoto-icon1.svg" alt="shreekusha">
+                    <img src="assets/img/icons/quoto-icon1.svg" alt="shreekusha" decoding="async" loading="lazy">
                     <div class="space16"></div>
                     <p>
                       I visited a few open plots from Shree Kusha Ventures recently and was impressed by the surroundings and connectivity. The prices were budget-friendly, and the plots had proper demarcation and road access. Great for future planning or long-term investment.
@@ -1995,7 +1989,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="test-images">
                       <div class="auhtor-area">
                         <div class="img1">
-                          <img src="assets/img/all-images/testimonial/testimonial-img4.png" alt="client">
+                          <img src="assets/img/all-images/testimonial/testimonial-img4.png" alt="client" width="70" height="71" decoding="async" loading="lazy">
                         </div>
                         <div class="text">
                           <a href="javascript:void(0)">- Jagan naik Ramavath</a>
@@ -2008,7 +2002,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                   </div>
 
                   <div class="testimonial-box">
-                    <img src="assets/img/icons/quoto-icon1.svg" alt="shreekusha">
+                    <img src="assets/img/icons/quoto-icon1.svg" alt="shreekusha" decoding="async" loading="lazy">
                     <div class="space16"></div>
                     <p>
                       I was specifically searching for HMDA plots with clear documentation and came across Shree Kusha Ventures. Their team was transparent, and all papers were shown clearly. I liked the connectivity of the location too. A good venture for both end-users and investors.👍👍
@@ -2017,7 +2011,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                     <div class="test-images">
                       <div class="auhtor-area">
                         <div class="img1">
-                          <img src="assets/img/all-images/testimonial/testimonial-img5.png" alt="client">
+                          <img src="assets/img/all-images/testimonial/testimonial-img5.png" alt="client" width="70" height="71" decoding="async" loading="lazy">
                         </div>
                         <div class="text">
                           <a href="javascript:void(0)">- Teja Sarah</a>
@@ -2031,10 +2025,10 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
                 </div>
                 <div class="testimonial-arrows">
                   <div class="prev-arrow">
-                    <button><i class="fa-solid fa-angle-left"></i></button>
+                    <button type="button" aria-label="Previous testimonial"><i class="fa-solid fa-angle-left" aria-hidden="true"></i></button>
                   </div>
                   <div class="next-arrow">
-                    <button><i class="fa-solid fa-angle-right"></i></button>
+                    <button type="button" aria-label="Next testimonial"><i class="fa-solid fa-angle-right" aria-hidden="true"></i></button>
                   </div>
                 </div>
               </div>
@@ -2063,7 +2057,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-duration="800">
           <div class="team-widget-boxarea">
             <div class="img1 image-anime">
-              <img src="assets/img/all-images/team/team-img1.png" alt="shree-kusha-ventures">
+              <img src="assets/img/all-images/team/team-img1.png" alt="shree-kusha-ventures" width="270" height="300" decoding="async" loading="lazy">
               <div class="share">
                 <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                     <path
@@ -2073,9 +2067,9 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
               </div>
 
               <ul>
-                <li><a href="https://facebook.com/shreekushaventures" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://instagram.com/shreekushaventures" target="_blank" class="m-0"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://instagram.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Instagram" class="m-0"><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
             </div>
             <div class="space24"></div>
@@ -2090,7 +2084,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-duration="900">
           <div class="team-widget-boxarea">
             <div class="img1 image-anime">
-              <img src="assets/img/all-images/team/team-img2.png" alt="shree-kusha-ventures">
+              <img src="assets/img/all-images/team/team-img2.png" alt="shree-kusha-ventures" width="270" height="300" decoding="async" loading="lazy">
               <div class="share">
                 <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                     <path
@@ -2100,9 +2094,9 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
               </div>
 
               <ul>
-                <li><a href="https://facebook.com/shreekushaventures" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://instagram.com/shreekushaventures" target="_blank" class="m-0"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://instagram.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Instagram" class="m-0"><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
             </div>
             <div class="space24"></div>
@@ -2117,7 +2111,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-duration="1000">
           <div class="team-widget-boxarea">
             <div class="img1 image-anime">
-              <img src="assets/img/all-images/team/team-img3.png" alt="shree-kusha-ventures">
+              <img src="assets/img/all-images/team/team-img3.png" alt="shree-kusha-ventures" width="270" height="300" decoding="async" loading="lazy">
               <div class="share">
                 <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                     <path
@@ -2127,9 +2121,9 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
               </div>
 
               <ul>
-                <li><a href="https://facebook.com/shreekushaventures" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://instagram.com/shreekushaventures" target="_blank" class="m-0"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://instagram.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Instagram" class="m-0"><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
             </div>
             <div class="space24"></div>
@@ -2144,7 +2138,7 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="col-lg-3 col-md-6" data-aos="zoom-out" data-aos-duration="1200">
           <div class="team-widget-boxarea">
             <div class="img1 image-anime">
-              <img src="assets/img/all-images/team/team-img4.png" alt="shree-kusha-ventures">
+              <img src="assets/img/all-images/team/team-img4.png" alt="shree-kusha-ventures" width="270" height="300" decoding="async" loading="lazy">
               <div class="share">
                 <a href="javascript:void(0)"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                     <path
@@ -2154,9 +2148,9 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
               </div>
 
               <ul>
-                <li><a href="https://facebook.com/shreekushaventures" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://instagram.com/shreekushaventures" target="_blank" class="m-0"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://facebook.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://instagram.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Instagram" class="m-0"><i class="fa-brands fa-instagram"></i></a></li>
               </ul>
             </div>
             <div class="space24"></div>
@@ -2228,6 +2222,8 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
   </div>
   <!--===== CTA AREA ENDS =======-->
 
+  </main>
+
   <!--===== FOOTER AREA STARTS =======-->
   <div class="footer4-section-area" style="background-image: url(assets/img/all-images/bg/bg5.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
     <div class="container">
@@ -2235,18 +2231,18 @@ KPHB Phase 3,<br> Kukatpally, Hyderabad,<br> Telangana 500072</a>
         <div class="space60"></div>
         <div class="col-lg-4 col-md-6">
           <div class="footer-logoarea">
-            <img src="assets/img/logo/shree_kusha_logo_1.png" alt="Shree Kusha Ventures">
+            <img src="assets/img/logo/shree_kusha_logo_1.png" alt="Shree Kusha Ventures" width="440" height="160" decoding="async">
             <div class="space24"></div>
             <p>Shree Kusha Ventures — Your trusted partner for premium ventures, farm lands, and residential plots in Hyderabad’s fast-growing corridors. Integrity. Transparency. Customer delight.</p>
             <div class="space24"></div>
             <ul>
-                  <li><a href="https://facebook.com/shreekushaventures" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                  <li><a href="https://instagram.com/shreekushaventures" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="https://youtube.com/@shreekushaventures" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                  <li><a href="https://facebook.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+                  <li><a href="https://linkedin.com/company/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+                  <li><a href="https://instagram.com/shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="https://youtube.com/@shreekushaventures" target="_blank" rel="noopener" aria-label="Shree Kusha Ventures on YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
                   <li>
-                    <a href="https://wa.me/919440184401" target="_blank" title="Chat with us on WhatsApp">
-                      <i class="fa-brands fa-whatsapp"></i>
+                    <a href="https://wa.me/919440184401" target="_blank" rel="noopener" aria-label="Chat with Shree Kusha Ventures on WhatsApp">
+                      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
                     </a>
             </ul>
           </div>
@@ -2301,17 +2297,17 @@ KPHB Phase 3, Kukatpally,</span><br><span style="margin-left: 35px;"> Hyderabad,
             <div class="footer-awards-grid">
               <div class="footer-award-card">
                 <a href="blogs.html" aria-label="Insights Success cover story">
-                  <img src="assets/img/footer/insights-success-cover-footer.png" alt="Insights Success real estate success cover featuring Dr. Prasanna Kumar Ballipagu">
+                  <img src="assets/img/footer/insights-success-cover-footer.webp" alt="Insights Success real estate success cover featuring Dr. Prasanna Kumar Ballipagu" width="600" height="764" decoding="async" loading="lazy">
                 </a>
               </div>
               <div class="footer-award-card">
                 <a href="blogs.html" aria-label="Business excellence award recognition">
-                  <img src="assets/img/footer/business-excellence-award-footer.png" alt="Business excellence award recognition ceremony">
+                  <img src="assets/img/footer/business-excellence-award-footer.webp" alt="Business excellence award recognition ceremony" width="489" height="761" decoding="async" loading="lazy">
                 </a>
               </div>
               <div class="footer-award-card">
                 <a href="blogs.html" aria-label="Global Pinnacle event ceremony">
-                  <img src="assets/img/footer/global-pinnacle-event-footer.png" alt="Global Pinnacle event lamp lighting ceremony">
+                  <img src="assets/img/footer/global-pinnacle-event-footer.webp" alt="Global Pinnacle event lamp lighting ceremony" width="600" height="767" decoding="async" loading="lazy">
                 </a>
               </div>
             </div>
@@ -2331,23 +2327,17 @@ KPHB Phase 3, Kukatpally,</span><br><span style="margin-left: 35px;"> Hyderabad,
   <!--===== FOOTER AREA ENDS =======-->
 
   <!--===== JS SCRIPT LINK =======-->
-  <script src="assets/js/plugins/bootstrap.min.js"></script>
-  <script src="assets/js/plugins/fontawesome.js"></script>
-  <script src="assets/js/plugins/aos.js"></script>
-  <script src="assets/js/plugins/counter.js"></script>
-  <script src="assets/js/plugins/gsap.min.js"></script>
-  <script src="assets/js/plugins/ScrollTrigger.min.js"></script>
-  <script src="assets/js/plugins/Splitetext.js"></script>
-  <script src="assets/js/plugins/sidebar.js"></script>
-  <script src="assets/js/plugins/swiper-slider.js"></script>
-  <script src="assets/js/plugins/magnific-popup.js"></script>
-  <script src="assets/js/plugins/mobilemenu.js"></script>
-  <script src="assets/js/plugins/owlcarousel.min.js"></script>
-  <script src="assets/js/plugins/nice-select.js"></script>
-  <script src="assets/js/plugins/waypoints.js"></script>
-  <script src="assets/js/plugins/slick-slider.js"></script>
-  <script src="assets/js/plugins/circle-progress.js"></script>
-  <script src="assets/js/main.js?v=20260701"></script>
+  <script defer src="assets/js/plugins/bootstrap.min.js"></script>
+  <script defer src="assets/js/plugins/aos.js"></script>
+  <script defer src="assets/js/plugins/counter.js"></script>
+  <script defer src="assets/js/plugins/sidebar.js"></script>
+  <script defer src="assets/js/plugins/magnific-popup.js"></script>
+  <script defer src="assets/js/plugins/mobilemenu.js"></script>
+  <script defer src="assets/js/plugins/owlcarousel.min.js"></script>
+  <script defer src="assets/js/plugins/nice-select.js"></script>
+  <script defer src="assets/js/plugins/waypoints.js"></script>
+  <script defer src="assets/js/plugins/slick-slider.js"></script>
+  <script defer src="assets/js/main.js?v=20260817-perf"></script>
 
 </body>
 
