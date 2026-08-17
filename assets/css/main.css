@@ -34,6 +34,14 @@ img {
   max-height: 100%;
 }
 
+.hero-area-slider > .hero1-section-area {
+  display: none;
+}
+
+.hero-area-slider > .hero1-section-area.is-active {
+  display: block;
+}
+
 body .about-heading h5,
 body .awards-gallery-heading h5,
 body .project-heading h5 {
@@ -1894,15 +1902,18 @@ Location:
   position: relative;
   z-index: 1;
   padding: 350px 0 215px;
+  min-height: 821px;
 }
 @media (max-width: 767px) {
   .hero-area-slider .hero1-section-area {
     padding: 160px 0 150px;
+    min-height: 586px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .hero-area-slider .hero1-section-area {
     padding: 200px 0 150px;
+    min-height: 676px;
   }
 }
 .hero-area-slider .hero1-section-area::after {

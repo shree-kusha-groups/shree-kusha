@@ -148,24 +148,35 @@
 
   //========== SLIDER ============= //
   var heroSlider = $(".hero-area-slider");
-  heroSlider.find(".hero-award-slide").prependTo(heroSlider);
-  heroSlider.find(".hero-brand-slide").insertAfter(heroSlider.find(".hero-award-slide"));
+  var heroSlides = heroSlider.children(".hero1-section-area");
+  var heroIndex = heroSlides.index(heroSlides.filter(".is-active"));
+  var heroTimer;
 
-  heroSlider.slick({
-    autoplay: true,
-    autoplaySpeed: 10000,
-    speed: 1500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    pauseOnHover: false,
-    dots: false,
-    arrows: true,
-    pauseOnDotsHover: true,
-    cssEase: 'linear',
-    fade: true,
-    draggable: true,
-    prevArrow: $(".testimonial-prev-arrow"),
-    nextArrow: $(".testimonial-next-arrow"),
+  function showHeroSlide(index) {
+    if (!heroSlides.length) {
+      return;
+    }
+    heroIndex = (index + heroSlides.length) % heroSlides.length;
+    heroSlides.removeClass("is-active").attr("aria-hidden", "true");
+    heroSlides.eq(heroIndex).addClass("is-active").attr("aria-hidden", "false");
+  }
+
+  function restartHeroTimer() {
+    window.clearInterval(heroTimer);
+    heroTimer = window.setInterval(function () {
+      showHeroSlide(heroIndex + 1);
+    }, 10000);
+  }
+
+  showHeroSlide(heroIndex >= 0 ? heroIndex : 0);
+  restartHeroTimer();
+  $(".testimonial-prev-arrow button").on("click", function () {
+    showHeroSlide(heroIndex - 1);
+    restartHeroTimer();
+  });
+  $(".testimonial-next-arrow button").on("click", function () {
+    showHeroSlide(heroIndex + 1);
+    restartHeroTimer();
   });
 
   //========== SLIDER ============= //
