@@ -169,7 +169,6 @@
   }
 
   showHeroSlide(heroIndex >= 0 ? heroIndex : 0);
-  restartHeroTimer();
   $(".testimonial-prev-arrow button").on("click", function () {
     showHeroSlide(heroIndex - 1);
     restartHeroTimer();
