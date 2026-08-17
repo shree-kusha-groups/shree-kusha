@@ -42,6 +42,16 @@ img {
   display: block;
 }
 
+#main-content > .properties-section-area,
+#main-content > .items-section-area,
+#main-content > .awards-gallery-section-area,
+#main-content > .video-gallery-section,
+#main-content > .testimonial1-section-area,
+#main-content > .cta1-section-area {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
 body .about-heading h5,
 body .awards-gallery-heading h5,
 body .project-heading h5 {
